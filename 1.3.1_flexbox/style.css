@@ -1,0 +1,17 @@
+.contenedor-flexible {
+    display: flex;
+    background-color: blueviolet;
+    border: 5px solid black;
+    padding: 10px;
+    margin: 5px;
+}
+
+.contenedor-hijo {
+    background-color: yellow;
+    border: 5px solid black;
+    padding: 10px;
+    margin: 5px;
+}
+.container-wrapeado{
+    flex-wrap: wrap;
+}

@@ -1,0 +1,30 @@
+.contenedor-grid{
+    display: grid;
+    grid-template-columns: repeat(3, auto) 20vw;
+    grid-template-rows: 20vh 60vh 20vh;
+    gap: 0;
+
+    grid-template-areas: 
+    "header header header header"
+    "main main main aside"
+    "footer footer footer"
+}
+
+header{
+    grid-area: header;
+}
+
+main{
+    grid-area: main;
+}
+
+
+footer{
+    grid-area: footer;
+}
+
+
+aside{
+    grid-area: aside;
+}
+

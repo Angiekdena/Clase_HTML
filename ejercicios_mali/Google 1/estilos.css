@@ -1,0 +1,186 @@
+/* Estilos generales */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f2f2f2;
+}
+
+a {
+	color: #737373;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+header {
+	background-color: #fff;
+	box-shadow: 0 1px 2px rgba(0,0,0,.1);
+	position: sticky;
+	top: 0;
+	z-index: 1;
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	padding: 10px 20px;
+	height: 44px;
+}
+
+nav a {
+	font-size: 14px;
+	margin-right: 20px;
+}
+
+nav a:hover {
+	text-decoration: underline;
+}
+
+#menu-de-hamburguesa {
+	display: none;
+}
+
+#menu-de-hamburguesa div {
+	height: 3px;
+	width: 25px;
+	background-color: #737373;
+	margin: 5px 0;
+	border-radius: 2px;
+}
+
+main {
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 100px 20px;
+}
+
+input[type="text"] {
+	height: 44px;
+	width: 100%;
+	padding: 0 10px;
+	border: none;
+	font-size: 16px;
+	box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+
+input[type="text"]:focus {
+	outline: none;
+	box-shadow: 0 2px 4px rgba(0,0,0,.2);
+}
+
+button {
+	background-color: #f2f2f2;
+	border: none;
+	height: 44px;
+	padding: 0 16px;
+	font-size: 14px;
+	margin-left: 10px;
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #e6e6e6;
+}
+
+#busqueda {
+	display: flex;
+	align-items: center;
+	margin-top: 50px;
+}
+
+#botones-de-busqueda {
+	display: flex;
+	align-items: center;
+}
+
+#opciones-de-busqueda {
+	margin-top: 20px;
+}
+
+#informacion-adicional {
+	margin-top: 50px;
+	color: #737373;
+	font-size: 14px;
+}
+
+#informacion-adicional p {
+	margin-bottom: 10px;
+}
+
+#paises a {
+	margin-right: 10px;
+}
+
+footer {
+	background-color: #f2f2f2;
+	padding: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 14px;
+	color: #737373;
+}
+
+footer a {
+	margin-right: 20px;
+}
+
+footer a:last-child {
+	margin-right: 0;
+}
+
+/* Estilos específicos de la página de inicio de Google */
+
+nav a:first-child {
+	background-image: url("https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_74x24dp.png");
+	background-repeat: no-repeat;
+	background-size: 74px 24px;
+	padding-left: 84px;
+}
+
+#menu-de-hamburguesa {
+	display: block;
+	cursor: pointer;
+}
+
+#busqueda input[type="text"] {
+	font-weight: bold;
+}
+
+#botones-de-busqueda button:first-child {
+	border-radius: 2px 0 0 2px;
+	}
+	
+	#botones-de-busqueda button:last-child {
+	border-radius: 0 2px 2px 0;
+	}
+	
+	#opciones-de-busqueda a:first-child {
+	border-right: 1px solid #dfe1e5;
+	padding-right: 20px;
+	}
+	
+	#paises {
+	display: flex;
+	align-items: center;
+	margin-top: 20px;
+	}
+	
+	#paises:before {
+	content: '';
+	display: inline-block;
+	height: 12px;
+	width: 1px;
+	background-color: #dfe1e5;
+	margin-right: 10px;
+	}
